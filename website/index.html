@@ -118,8 +118,12 @@
         // Swap out the URL for the different stylesheets
         if (theme.getAttribute("href") == "style.css") {
           theme.href = "style-dark.css";
+          btn.innerHTML = "Light Mode";
+          
+
         } else {
           theme.href = "style.css";
+          btn.innerHTML="Dark Mode"
         }
       });
     </script>
